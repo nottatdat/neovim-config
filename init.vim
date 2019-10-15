@@ -1,58 +1,47 @@
-" 
-call plug#begin()
+""""""
 
-" Git
-Plug 'tpope/vim-fugitive'
+" I don't know how it happened
+" I don't know who's to blame
+" I don't know how I hurt you
+" But I hurt you just the same
+" And even though you say we're through
+" I still feel the same about you
 
-" LSP support
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-denite'
+" Somebody must have told you
+" The story that you've heard
+" That I had found another love
+" But don't believe a word
+" And though you break my heart in two
+" I still feel the same about you
 
-" Languages support
+" https://open.spotify.com/track/2kfNXuGSmdndkOO6L1Gx63
 
-" Navigation
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
+""""""
 
-call plug#end()
+let dothome = '$HOME/.config/nvim'
 
-filetype plugin indent on
 
-"
-set encoding=UTF-8
-set hidden
-set nobackup
-set nowritebackup
-set mouse=a
-set wildoptions=pum
-set pumblend=20
-set cursorline
+"""""" Define all the necessary plugins
+exec 'source' dothome . '/plugins.vim'
 
-let g:is_posix = 1
 
-set noswapfile
-set nojoinspaces
-set nowrap
-set number
-set ttyfast
-set laststatus=2
-set ttimeout
-set ttimeoutlen=10
-set termguicolors
-set ignorecase
+"""""" Should be the default setting
+exec 'source' dothome . '/defaults.vim'
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab
 
-set autoindent
-set smartindent
+""""""" Display settings
+exec 'source' dothome . '/displays.vim'
 
-"
+
+""""""" User-defined keys binding
+exec 'source' dothome . '/keybindings.vim'
+
+
+""""""" coc.nvim configuration
+exec 'source' dothome . '/coc.vim'
+
+
+""""""" Project management
 set rtp+=/usr/local/opt/fzf
 
-"
-inoremap ht <ESC>
+
