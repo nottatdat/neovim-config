@@ -1,4 +1,5 @@
 filetype plugin indent on
+
 set encoding=UTF-8
 set hidden
 set nobackup
@@ -10,6 +11,9 @@ set cursorline
 
 let g:is_posix = 1
 
+" Copy from neovim to clipboard
+set clipboard+=unnamedplus
+
 set noswapfile
 set nojoinspaces
 set nowrap
@@ -20,10 +24,11 @@ set ttimeout
 set ttimeoutlen=10
 set termguicolors
 set ignorecase
+set updatetime=100
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
 
@@ -32,3 +37,4 @@ set smartindent
 
 " Remove unwanted trailing whitespaces
 autocmd BufWritePre * %s/\s\+$//e
+

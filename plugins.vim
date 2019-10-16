@@ -7,20 +7,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-denite'
 
-" Languages support
-
 " Navigation
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 " Display
-Plug 'reewr/vim-monokai-phoenix'
+Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Project management
 Plug 'scrooloose/nerdtree'
+Plug 'liuchengxu/vim-clap'
 
 " Source code analysis
 Plug 'liuchengxu/vista.vim'

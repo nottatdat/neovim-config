@@ -1,12 +1,15 @@
-colorscheme monokai-phoenix
+""" ColorScheme setting
+colorscheme molokai
+
+
+""" Other default UI configuration
 set colorcolumn=100,120
+set cmdheight=2
+set shortmess+=c
+set signcolumn=yes
+
 
 """ LightLine configuration
-function! NearestMethodOrFunction() abort
-  let fname = get(b:, 'vista_nearest_method_or_function', '')
-  return len(fname) > 0 ? "\u0192 " . fname : ""
-endfunction
-
 function! DrawGitBranchInfo()
   let branch = fugitive#head()
   return len(branch) > 0 ? " " . branch : ""
@@ -45,6 +48,7 @@ let g:lightline = {
       \   'left': [ [], ['fileicon'], [ 'filename' ] ],
       \   'right': []
       \ },
+      \ 'component': { 'lineinfo': '%2p%% %3l:%-2v' },
       \ 'component_function': {
       \   'fileicon': 'MyFiletype',
       \   'icongitbranch': 'DrawGitBranchInfo',
@@ -52,18 +56,11 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'cocstatus': 'coc#status',
       \   'filename': 'LightLineFilename',
-      \   'nearmethod': 'NearestMethodOrFunction'
       \ },
       \ }
 
-set statusline+=%{NearestMethodOrFunction()}
-
 " Use autocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
-autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
-
-set shortmess+=c
-set signcolumn=yes
 
 
 """ Floating Term
@@ -104,7 +101,7 @@ function! FloatTerm()
   terminal
   startinsert
   " Close border window when terminal window close
-  autocmd CursorMoved * ++once call nvim_win_close(s:float_term_border_win, v:true)
+  autocmd TermClose * ++once :q | call nvim_win_close(s:float_term_border_win, v:true)
 endfunction
 
 
@@ -113,48 +110,18 @@ let NERDTreeMinimalUI=1
 
 
 """ devicons configuration
-
-" loading the plugin
 let g:webdevicons_enable = 1
-
-" adding the flags to NERDTree
 let g:webdevicons_enable_nerdtree = 1
-
-" adding the custom source to unite
 let g:webdevicons_enable_unite = 1
-
-" adding the column to vimfiler
 let g:webdevicons_enable_vimfiler = 1
-
-" adding to vim-airline's tabline
 let g:webdevicons_enable_airline_tabline = 1
-
-" adding to vim-airline's statusline
 let g:webdevicons_enable_airline_statusline = 1
-
-" ctrlp glyphs
 let g:webdevicons_enable_ctrlp = 1
-
-" adding to vim-startify screen
 let g:webdevicons_enable_startify = 1
-
-" adding to flagship's statusline
 let g:webdevicons_enable_flagship_statusline = 1
-
-" turn on/off file node glyph decorations (not particularly useful)
 let g:WebDevIconsUnicodeDecorateFileNodes = 1
-
-" use double-width(1) or single-width(0) glyphs
-" only manipulates padding, has no effect on terminal or set(guifont) font
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
-
-" whether or not to show the nerdtree brackets around flags
 let g:webdevicons_conceal_nerdtree_brackets = 1
-
-" the amount of space to use after the glyph character (default ' ')
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-
-" Force extra padding in NERDTree so that the filetype icons line up vertically
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-
 
