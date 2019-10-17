@@ -40,8 +40,3 @@ exec 'source' dothome . '/keybindings.vim'
 """"""" coc.nvim configuration
 exec 'source' dothome . '/coc.vim'
 
-
-""""""" Project management
-set rtp+=/usr/local/opt/fzf
-
-
