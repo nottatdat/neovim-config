@@ -35,6 +35,8 @@ set expandtab
 set autoindent
 set smartindent
 
+set wrap linebreak nolist
+
 " Remove unwanted trailing whitespaces
 autocmd BufWritePre * %s/\s\+$//e
 
