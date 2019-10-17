@@ -3,8 +3,8 @@ inoremap tn <ESC>
 let mapleader=" "
 
 " save and quit
-nnoremap <Leader>ss :w<CR>
-nnoremap <Leader>qq :q<CR>
+nnoremap <Leader>s :w<CR>
+nnoremap <Leader>q :q<CR>
 nnoremap <Leader>sq :wq<CR>
 
 " windows management
