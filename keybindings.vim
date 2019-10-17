@@ -30,6 +30,3 @@ nnoremap <Leader>ff :Clap files<CR>
 nnoremap <Leader>ss :mksession! .work<CR>
 nnoremap <Leader>sr :so .work<CR>
 
-" floating terminal
-nnoremap <Leader>at :call FloatTerm()<CR>
-
