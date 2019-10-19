@@ -5,8 +5,6 @@ set hidden
 set nobackup
 set nowritebackup
 set mouse=a
-set wildoptions=pum
-set pumblend=20
 set cursorline
 
 let g:is_posix = 1
