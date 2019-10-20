@@ -12,6 +12,9 @@ let g:is_posix = 1
 " Copy from neovim to clipboard
 set clipboard+=unnamedplus
 
+set wildoptions=pum
+set pumblend=20
+
 set noswapfile
 set nojoinspaces
 set nowrap

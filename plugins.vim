@@ -2,6 +2,7 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " LSP support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
