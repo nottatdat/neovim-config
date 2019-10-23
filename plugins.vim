@@ -2,7 +2,6 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 
 " LSP support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -18,7 +17,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Project management
-Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-rooter'
 Plug 'liuchengxu/vim-clap'
 
 " Source code analysis

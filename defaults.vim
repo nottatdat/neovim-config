@@ -11,10 +11,8 @@ let g:is_posix = 1
 
 " Copy from neovim to clipboard
 set clipboard+=unnamedplus
-
 set wildoptions=pum
 set pumblend=20
-
 set noswapfile
 set nojoinspaces
 set nowrap
@@ -26,16 +24,13 @@ set ttimeoutlen=10
 set termguicolors
 set ignorecase
 set updatetime=100
-
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
-
 set autoindent
 set smartindent
-
 set wrap linebreak nolist
 
 " Remove unwanted trailing whitespaces

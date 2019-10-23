@@ -94,6 +94,7 @@
             ],
             "filetypes": ["julia"]
         }
-    }
+    },
+    "git.enableGutters": true
 }
 

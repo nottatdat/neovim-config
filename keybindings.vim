@@ -2,12 +2,16 @@ inoremap tn <ESC>
 
 let mapleader=" "
 
-" save and quit
+""" save and quit
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>sq :wq<CR>
 
-" windows management
+""" dotfile shortcuts
+nnoremap <Leader><Leader>e :e  $MYVIMRC<CR>
+nnoremap <Leader><Leader>r :so $MYVIMRC<CR>
+
+""" windows management
 nnoremap <Leader>ll :vsplit<CR>
 nnoremap <Leader>kk :split<CR>
 nnoremap <Leader>wh :wincmd h<CR>
@@ -16,26 +20,52 @@ nnoremap <Leader>wk :wincmd k<CR>
 nnoremap <Leader>wj :wincmd j<CR>
 nnoremap <Leader>w= :wincmd =<CR>
 
-" dotfile shortcuts
-nnoremap <Leader><Leader>e :e  $MYVIMRC<CR>
-nnoremap <Leader><Leader>r :so $MYVIMRC<CR>
-
-" NERDTree
-nnoremap <Leader>n :NERDTree<CR>
-
-" buffers/tags/files management
+""" buffers/tags/files management
 nnoremap <Leader>bf :Clap buffers<CR>
-nnoremap <Leader>bt :Clap tags<CR>
+nnoremap <Leader>ft :Clap tags<CR>
 nnoremap <Leader>ff :Clap files<CR>
+nnoremap <Leader>fg :Clap grep
+nnoremap <Leader>fw :Clap grep ++query=<cword><CR>
 
-" git
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>ge :Gedit<CR>
-nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gg :Ggrep<CR>
-nnoremap <Leader>gh :Gbrowse<CR>
+""" git
+nnoremap <Leader>ga  :!ga %p<CR>
+nnoremap <Leader>gaa :!gaa<CR>
+nnoremap <Leader>gc  :!gc
+nnoremap <Leader>gs  :!gs<CR>
+nnoremap <Leader>gd  :Gdiffsplit<CR>
 
-" sessions
-nnoremap <Leader>ss :mksession! .work<CR>
-nnoremap <Leader>sr :so .work<CR>
+""" coc
+" Using CocList
+nnoremap <silent> <space>a :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>e :<C-u>CocList extensions<cr>
+nnoremap <silent> <space>c :<C-u>CocList commands<cr>
+nnoremap <silent> <space>o :<C-u>CocList outline<cr>
+nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>j :<C-u>CocNext<CR>
+nnoremap <silent> <space>k :<C-u>CocPrev<CR>
+nnoremap <silent> <space>p :<C-u>CocListResume<CR>
+
+" remap keys for gotos
+nmap <silent> gd <plug>(coc-definition)
+nmap <silent> gy <plug>(coc-type-definition)
+nmap <silent> gi <plug>(coc-implementation)
+nmap <silent> gr <plug>(coc-references)
+
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> ,h <Plug>(coc-diagnostic-prev)
+nmap <silent> .h <Plug>(coc-diagnostic-next)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
+
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+nmap <silent> <C-d> <Plug>(coc-range-select)
+xmap <silent> <C-d> <Plug>(coc-range-select)
 

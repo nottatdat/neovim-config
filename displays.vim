@@ -63,10 +63,6 @@ let g:lightline = {
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 
-""" NERDTree config
-let NERDTreeMinimalUI=1
-
-
 """ devicons configuration
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
