@@ -21,17 +21,13 @@ nnoremap <Leader>wj :wincmd j<CR>
 nnoremap <Leader>w= :wincmd =<CR>
 
 """ buffers/tags/files management
-nnoremap <Leader>bf :Clap buffers<CR>
-nnoremap <Leader>ft :Clap tags<CR>
+nnoremap <Leader>bb :Clap buffers<CR>
+nnoremap <Leader>tt :Clap tags<CR>
 nnoremap <Leader>ff :Clap files<CR>
-nnoremap <Leader>fg :Clap grep
+nnoremap <Leader>gg :Clap grep<CR>
 nnoremap <Leader>fw :Clap grep ++query=<cword><CR>
 
 """ git
-nnoremap <Leader>ga  :!ga %p<CR>
-nnoremap <Leader>gaa :!gaa<CR>
-nnoremap <Leader>gc  :!gc
-nnoremap <Leader>gs  :!gs<CR>
 nnoremap <Leader>gd  :Gdiffsplit<CR>
 
 """ coc
@@ -68,4 +64,3 @@ nmap <leader>f <Plug>(coc-format-selected)
 " Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
 nmap <silent> <C-d> <Plug>(coc-range-select)
 xmap <silent> <C-d> <Plug>(coc-range-select)
-

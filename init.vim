@@ -20,23 +20,17 @@
 
 let dothome = '$HOME/.config/nvim'
 
-
 """""" Define all the necessary plugins
 exec 'source' dothome . '/plugins.vim'
-
 
 """""" Should be the default setting
 exec 'source' dothome . '/defaults.vim'
 
-
 """"""" Display settings
 exec 'source' dothome . '/displays.vim'
-
 
 """"""" User-defined keys binding
 exec 'source' dothome . '/keybindings.vim'
 
-
 """"""" coc.nvim configuration
 exec 'source' dothome . '/coc.vim'
-
