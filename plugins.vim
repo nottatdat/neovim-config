@@ -3,6 +3,9 @@ call plug#begin()
 " Git
 Plug 'tpope/vim-fugitive'
 
+" Snippets
+Plug  'SirVer/ultisnips'
+
 " LSP support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-denite'

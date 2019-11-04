@@ -30,6 +30,14 @@ nnoremap <Leader>fw :Clap grep ++query=<cword><CR>
 """ git
 nnoremap <Leader>gd  :Gdiffsplit<CR>
 
+""" snippets
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 """ coc
 " Using CocList
 nnoremap <silent> <space>a :<C-u>CocList diagnostics<cr>
