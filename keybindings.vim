@@ -14,10 +14,10 @@ nnoremap <Leader><Leader>r :so $MYVIMRC<CR>
 """ windows management
 nnoremap <Leader>ll :vsplit<CR>
 nnoremap <Leader>kk :split<CR>
-nnoremap <Leader>wh :wincmd h<CR>
-nnoremap <Leader>wl :wincmd l<CR>
-nnoremap <Leader>wk :wincmd k<CR>
-nnoremap <Leader>wj :wincmd j<CR>
+nnoremap <Leader>h :wincmd h<CR>
+nnoremap <Leader>l :wincmd l<CR>
+nnoremap <Leader>k :wincmd k<CR>
+nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>w= :wincmd =<CR>
 
 """ buffers/tags/files management
@@ -34,9 +34,6 @@ nnoremap <Leader>at :call FloatTerm()<CR>
 nnoremap <Leader>n :NERDTree<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 
-""" git
-nnoremap <Leader>gd  :Gdiffsplit<CR>
-
 """ snippets
 let g:UltiSnipsExpandTrigger="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
@@ -47,14 +44,14 @@ let g:UltiSnipsEditSplit="vertical"
 
 """ coc
 " Using CocList
-nnoremap <silent> <space>a :<C-u>CocList diagnostics<cr>
-nnoremap <silent> <space>e :<C-u>CocList extensions<cr>
-nnoremap <silent> <space>c :<C-u>CocList commands<cr>
-nnoremap <silent> <space>o :<C-u>CocList outline<cr>
-nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
-nnoremap <silent> <space>j :<C-u>CocNext<CR>
-nnoremap <silent> <space>k :<C-u>CocPrev<CR>
-nnoremap <silent> <space>p :<C-u>CocListResume<CR>
+nnoremap <silent> <space>ca :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>ce :<C-u>CocList extensions<cr>
+nnoremap <silent> <space>cc :<C-u>CocList commands<cr>
+nnoremap <silent> <space>co :<C-u>CocList outline<cr>
+nnoremap <silent> <space>cs :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>cj :<C-u>CocNext<CR>
+nnoremap <silent> <space>ck :<C-u>CocPrev<CR>
+nnoremap <silent> <space>cp :<C-u>CocListResume<CR>
 
 " remap keys for gotos
 nmap <silent> gd <plug>(coc-definition)
