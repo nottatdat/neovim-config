@@ -27,6 +27,13 @@ nnoremap <Leader>ff :Clap files<CR>
 nnoremap <Leader>gg :Clap grep<CR>
 nnoremap <Leader>fw :Clap grep ++query=<cword><CR>
 
+""" floating terminal
+nnoremap <Leader>at :call FloatTerm()<CR>
+
+""" NERDTree
+nnoremap <Leader>n :NERDTree<CR>
+nnoremap <Leader>f :NERDTreeFind<CR>
+
 """ git
 nnoremap <Leader>gd  :Gdiffsplit<CR>
 
@@ -69,6 +76,6 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
 
-" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+" Use <C-d> for select selections ranges
 nmap <silent> <C-d> <Plug>(coc-range-select)
 xmap <silent> <C-d> <Plug>(coc-range-select)

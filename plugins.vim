@@ -2,6 +2,7 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Snippets
 Plug  'SirVer/ultisnips'
@@ -20,6 +21,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Project management
+Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-rooter'
 Plug 'liuchengxu/vim-clap'
 
