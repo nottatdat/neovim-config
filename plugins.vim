@@ -16,7 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 " Display
-Plug 'tomasr/molokai'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
