@@ -21,11 +21,11 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>w= :wincmd =<CR>
 
 """ buffers/tags/files management
-nnoremap <Leader>bb :Clap buffers<CR>
-nnoremap <Leader>tt :Clap tags<CR>
-nnoremap <Leader>ff :Clap files<CR>
-nnoremap <Leader>gg :Clap grep<CR>
-nnoremap <Leader>fw :Clap grep ++query=<cword><CR>
+nnoremap <Leader>bb :Clap! buffers<CR>
+nnoremap <Leader>tt :Clap! tags<CR>
+nnoremap <Leader>ff :Clap! files<CR>
+nnoremap <Leader>gg :Clap! grep<CR>
+nnoremap <Leader>fw :Clap! grep ++query=<cword><CR>
 
 """ floating terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
