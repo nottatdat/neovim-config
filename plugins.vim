@@ -22,7 +22,6 @@ Plug 'ryanoasis/vim-devicons'
 
 " Project management
 Plug 'scrooloose/nerdtree'
-Plug 'airblade/vim-rooter'
 Plug 'liuchengxu/vim-clap'
 
 " Source code analysis
