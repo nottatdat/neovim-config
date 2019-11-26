@@ -31,7 +31,3 @@ exec 'source' dothome . '/displays.vim'
 
 """"""" User-defined keys binding
 exec 'source' dothome . '/keybindings.vim'
-
-""""""" plugins configurations
-exec 'source' dothome . '/plugins/clap.vim'
-exec 'source' dothome . '/coc.vim'

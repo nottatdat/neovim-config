@@ -28,3 +28,7 @@ Plug 'liuchengxu/vim-clap'
 Plug 'liuchengxu/vista.vim'
 
 call plug#end()
+
+""""""" plugins configurations
+exec 'source' dothome . '/plugins/clap.vim'
+exec 'source' dothome . '/plugins/coc.nvim.vim'
