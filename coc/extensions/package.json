@@ -6,6 +6,6 @@
     "coc-git": ">=1.6.16",
     "coc-ccls": ">=0.0.5",
     "coc-python": ">=1.2.6",
-    "coc-texlab": ">=1.9.8"
+    "coc-texlab": ">=1.9.9"
   }
 }
