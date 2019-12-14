@@ -22,7 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Project management
 Plug 'scrooloose/nerdtree'
-Plug 'liuchengxu/vim-clap'
+Plug 'liuchengxu/vim-clap', { 'do': function('clap#helper#build_all') }
 
 " Source code analysis
 Plug 'liuchengxu/vista.vim'
