@@ -2,7 +2,7 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'rhysd/git-messenger.vim'
 
 " Snippets
 Plug  'SirVer/ultisnips'
