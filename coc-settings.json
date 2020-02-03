@@ -95,6 +95,8 @@
             "filetypes": ["julia"]
         }
     },
-    "git.enableGutters": true
+
+    "git.enableGutters": true,
+    "coc.preferences.extensionUpdateCheck": "daily"
 }
 
