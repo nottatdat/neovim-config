@@ -6,10 +6,18 @@ git fetch --all --tags --prune
 git checkout tags/nightly
 
 # Build neovim from source with necessary config
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local/nvim ..
-make
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    mkdir build
+    cd build
+    cmake -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=$HOME/.local/nvim ..
+    make
+elif [[ "$OSTYPE" == "darwin" ]]; then
+    make CMAKE_BUILD_TYPE=Release \
+         CMAKE_INSTALL_PREFIX=$HOME/.local/nvim \
+         MACOSX_DEPLOYMENT_TARGET=10.14 \
+         DEPS_CMAKE_FLAGS="-DCMAKE_CXX_COMPILER=$(xcrun -find c++)"
+fi
 
 # Install neovim to local folder
 make install
