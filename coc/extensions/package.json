@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "coc-ccls": ">=0.0.5",
-    "coc-git": ">=1.7.4",
+    "coc-git": ">=1.7.6",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
     "coc-python": ">=1.2.8",
