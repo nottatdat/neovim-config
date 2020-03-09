@@ -1,6 +1,7 @@
 """ ColorScheme setting
 set background=light
 colorscheme PaperColor
+let g:clap_theme = 'material_design_dark'
 
 """ Other default UI configuration
 set colorcolumn=100,120
