@@ -33,25 +33,6 @@
     },
 
     "languageserver": {
-        "ccls": {
-            "command": "ccls",
-            "filetypes": ["c", "cpp", "objc", "objcpp"],
-            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                },
-                "clang": {
-                    "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/",
-                    "extraArgs": [
-                        "-isystem",
-                        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
-                        "-I",
-                        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
-                    ]
-                }
-            }
-        },
         "golang": {
             "command": "go-langserver",
             "filetypes": ["go"],
@@ -83,16 +64,6 @@
             "command": "ocaml-language-server",
             "args": ["--stdio"],
             "filetypes": ["ocaml", "reason"]
-        },
-        "julia": {
-            "command": "/usr/bin/julia",
-            "args" : [
-                "--startup-file=no",
-                "--history-file=no",
-                "-e",
-                "using LanguageServer; using Pkg; import StaticLint; import SymbolServer; env_path = dirname(Pkg.Types.Context().env.project_file); debug = false; server = LanguageServer.LanguageServerInstance(stdin, stdout, debug, env_path, \"\", Dict()); server.runlinter = true; run(server);"
-            ],
-            "filetypes": ["julia"]
         }
     },
 
