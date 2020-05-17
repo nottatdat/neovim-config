@@ -33,6 +33,11 @@
     },
 
     "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+        },
         "golang": {
             "command": "go-langserver",
             "filetypes": ["go"],
@@ -41,29 +46,6 @@
                 "diagnosticsEnabled": true,
                 "lintTool": "golint"
             }
-        },
-        "haskell": {
-            "command": "hie-wrapper",
-            "rootPatterns": [
-                ".stack.yaml",
-                "cabal.config",
-                "package.yaml"
-            ],
-            "filetypes": [
-                "hs",
-                "lhs",
-                "haskell"
-            ],
-            "initializationOptions": {
-                "languageServerHaskell": {
-                    "hlintOn": true
-                }
-            }
-        },
-        "ocaml": {
-            "command": "ocaml-language-server",
-            "args": ["--stdio"],
-            "filetypes": ["ocaml", "reason"]
         }
     },
 
