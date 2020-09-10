@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "coc-clangd": ">=0.4.2",
-    "coc-git": ">=1.7.13",
+    "coc-clangd": ">=0.4.14",
+    "coc-git": ">=1.8.3",
     "coc-json": ">=1.2.6",
     "coc-marketplace": ">=1.7.0",
     "coc-python": ">=1.2.12",
     "coc-rls": ">=1.1.6",
+    "coc-rust-analyzer": ">=0.7.16",
     "coc-texlab": ">=2.1.0"
   }
 }
