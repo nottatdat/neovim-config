@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
 " Source code analysis
-Plug 'liuchengxu/vista.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 call plug#end()
 
