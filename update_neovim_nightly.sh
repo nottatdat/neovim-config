@@ -2,16 +2,15 @@
 cd $HOME/src/contribute/tools/neovim/
 
 # Retrieve latest version of nightly neovim
-git fetch --all --tags --prune
+git fetch --all --tags -f --prune
 git checkout tags/nightly
 
 # Build neovim from source with necessary config
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     mkdir build
     cd build
-    cmake -DCMAKE_BUILD_TYPE=Release \
-          -DCMAKE_INSTALL_PREFIX=$HOME/.local/nvim ..
-    make
+    make -DCMAKE_BUILD_TYPE=Release \
+         -DCMAKE_INSTALL_PREFIX=$HOME/.local/nvim
 elif [[ "$OSTYPE" == "darwin" ]]; then
     make CMAKE_BUILD_TYPE=Release \
          CMAKE_INSTALL_PREFIX=$HOME/.local/nvim \
