@@ -7,8 +7,6 @@ git checkout tags/nightly
 
 # Build neovim from source with necessary config
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    mkdir build
-    cd build
     make -DCMAKE_BUILD_TYPE=Release \
          -DCMAKE_INSTALL_PREFIX=$HOME/.local/nvim
 elif [[ "$OSTYPE" == "darwin" ]]; then
