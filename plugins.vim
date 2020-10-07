@@ -32,3 +32,4 @@ call plug#end()
 """"""" plugins configurations
 exec 'source' dothome . '/plugins/clap.vim'
 exec 'source' dothome . '/plugins/coc.nvim.vim'
+exec 'source' dothome . '/plugins/nvim-treesitter.vim'
