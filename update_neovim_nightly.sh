@@ -18,6 +18,8 @@ fi
 
 # Install neovim to local folder
 make install
+sudo rm /usr/bin/nvim
+sudo ln -s $HOME/.local/nvim/bin/nvim /usr/bin/nvim
 
 # Clean up afterward
 cd ..
