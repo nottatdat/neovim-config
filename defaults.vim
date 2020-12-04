@@ -6,6 +6,7 @@ set encoding=UTF-8
 set expandtab
 set hidden
 set ignorecase
+set inccommand=split
 set laststatus=2
 set mouse=a
 set nobackup
