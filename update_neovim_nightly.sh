@@ -22,7 +22,6 @@ sudo rm /usr/bin/nvim
 sudo ln -s $HOME/.local/nvim/bin/nvim /usr/bin/nvim
 
 # Clean up afterward
-cd ..
 make clean
 git clean -xdf
 git checkout master
