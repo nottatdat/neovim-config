@@ -4,8 +4,9 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'rhysd/git-messenger.vim'
 
-" Snippets
-Plug  'SirVer/ultisnips'
+" Utilities
+Plug 'SirVer/ultisnips'
+Plug 'preservim/nerdcommenter'
 
 " LSP support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
