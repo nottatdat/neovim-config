@@ -1,5 +1,6 @@
 {
-    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
 
     "suggest.completionItemKindLabels": {
         "keyword": "\uf1de",

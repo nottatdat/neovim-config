@@ -6,7 +6,8 @@
     "coc-json": ">=1.3.2",
     "coc-marketplace": ">=1.8.0",
     "coc-pyright": ">=1.1.95",
-    "coc-rust-analyzer": ">=0.23.0",
+    "coc-python": ">=1.2.13",
+    "coc-rust-analyzer": ">=0.24.0",
     "coc-texlab": ">=2.3.0"
   }
 }
