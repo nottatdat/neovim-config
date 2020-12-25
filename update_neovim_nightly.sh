@@ -7,10 +7,10 @@ git checkout tags/nightly
 
 # Build neovim from source with necessary config
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    make CMAKE_BUILD_TYPE=RelWithDebInfo \
+    make CMAKE_BUILD_TYPE=Release \
          CMAKE_INSTALL_PREFIX=$HOME/.local/nvim
 elif [[ "$OSTYPE" == "darwin" ]]; then
-    make CMAKE_BUILD_TYPE=RelWithDebInfo \
+    make CMAKE_BUILD_TYPE=Release \
          CMAKE_INSTALL_PREFIX=$HOME/.local/nvim \
          MACOSX_DEPLOYMENT_TARGET=10.14 \
          DEPS_CMAKE_FLAGS="-DCMAKE_CXX_COMPILER=$(xcrun -find c++)"
