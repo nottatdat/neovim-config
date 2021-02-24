@@ -61,16 +61,6 @@ let g:lightline = {
 " Use autocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
-""" NERDTree configuration
-let NERDTreeMinimalUI=1
-
-" close vim if the only remaining buffer is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" change the default arrows
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
 """ devicons configuration
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1

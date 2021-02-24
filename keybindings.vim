@@ -12,13 +12,12 @@ nnoremap <Leader><Leader>e :e  $MYVIMRC<CR>
 nnoremap <Leader><Leader>r :so $MYVIMRC<CR>
 
 """ windows management
-nnoremap <Leader>ll :vsplit<CR>
-nnoremap <Leader>kk :split<CR>
-nnoremap <Leader>h :wincmd h<CR>
-nnoremap <Leader>l :wincmd l<CR>
-nnoremap <Leader>k :wincmd k<CR>
-nnoremap <Leader>j :wincmd j<CR>
-nnoremap <Leader>w= :wincmd =<CR>
+nnoremap <Leader>v :vsplit<CR>
+nnoremap <Leader>h :split<CR>
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
+nnoremap <silent> <A-Left> :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
 """ buffers/tags/files management
 nnoremap <Leader>bb :Clap! buffers<CR>
@@ -29,18 +28,6 @@ nnoremap <Leader>fw :Clap! grep ++query=<cword><CR>
 
 """ floating terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
-
-""" NERDTree
-nnoremap <Leader>n :NERDTree<CR>
-nnoremap <Leader>f :NERDTreeFind<CR>
-
-""" snippets
-let g:UltiSnipsExpandTrigger="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 """ coc
 " Using CocList

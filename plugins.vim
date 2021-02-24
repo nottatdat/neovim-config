@@ -5,7 +5,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'rhysd/git-messenger.vim'
 
 " Utilities
-Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdcommenter'
 
 " LSP support
@@ -22,7 +21,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Project management
-Plug 'scrooloose/nerdtree'
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python -m chadtree deps'}
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
 " Source code analysis
