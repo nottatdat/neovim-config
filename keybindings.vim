@@ -23,8 +23,8 @@ nnoremap <silent> <A-Right> :wincmd l<CR>
 nnoremap <Leader>bb :Clap! buffers<CR>
 nnoremap <Leader>tt :Clap! tags<CR>
 nnoremap <Leader>ff :Clap! files<CR>
-nnoremap <Leader>gg :Clap! grep<CR>
-nnoremap <Leader>fw :Clap! grep ++query=<cword><CR>
+nnoremap <Leader>gg :Clap! grep2<CR>
+nnoremap <Leader>fw :Clap! grep2 ++query=<cword><CR>
 
 """ floating terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
