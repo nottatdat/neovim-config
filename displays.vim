@@ -1,6 +1,5 @@
 """ ColorScheme setting
-set background=light
-colorscheme PaperColor
+colorscheme molokai
 
 """ Other default UI configuration
 set colorcolumn=100,120
