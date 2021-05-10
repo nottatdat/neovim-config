@@ -22,7 +22,9 @@ Plug 'ryanoasis/vim-devicons'
 
 " Project management
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python -m chadtree deps'}
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Source code analysis
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -30,6 +32,5 @@ Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
 """"""" plugins configurations
-exec 'source' dothome . '/plugins/clap.vim'
 exec 'source' dothome . '/plugins/coc.nvim.vim'
 exec 'source' dothome . '/plugins/nvim-treesitter.vim'

@@ -20,11 +20,10 @@ nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
 
 """ buffers/tags/files management
-nnoremap <Leader>bb :Clap! buffers<CR>
-nnoremap <Leader>tt :Clap! tags<CR>
-nnoremap <Leader>ff :Clap! files<CR>
-nnoremap <Leader>gg :Clap! grep2<CR>
-nnoremap <Leader>fw :Clap! grep2 ++query=<cword><CR>
+nnoremap <Leader>bb :Telescope buffers<CR>
+nnoremap <Leader>tt :Telescope tags<CR>
+nnoremap <Leader>ff :Telescope find_files<CR>
+nnoremap <Leader>gg :Telescope grep_string<CR>
 
 """ floating terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
