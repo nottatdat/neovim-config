@@ -24,6 +24,11 @@ nnoremap <Leader>bb :Telescope buffers<CR>
 nnoremap <Leader>tt :Telescope tags<CR>
 nnoremap <Leader>ff :Telescope find_files<CR>
 nnoremap <Leader>gg :Telescope grep_string<CR>
+lua << EOF
+    require('telescope').load_extension('projects')
+    require("project_nvim").setup {}
+EOF
+nnoremap <Leader>pp :Telescope projects<CR>
 
 """ floating terminal
 nnoremap <Leader>at :call FloatTerm()<CR>
@@ -41,7 +46,7 @@ nnoremap <silent> <space>cp :<C-u>CocListResume<CR>
 
 " remap keys for gotos
 nmap <silent> gd <plug>(coc-definition)
-nmap <silent> gy <plug>(coc-type-definition)
+nmap <silent> gt <plug>(coc-type-definition)
 nmap <silent> gi <plug>(coc-implementation)
 nmap <silent> gr <plug>(coc-references)
 
@@ -50,7 +55,7 @@ nmap <silent> ,h <Plug>(coc-diagnostic-prev)
 nmap <silent> .h <Plug>(coc-diagnostic-next)
 
 " Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> E :call <SID>show_documentation()<CR>
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)

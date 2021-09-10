@@ -2,18 +2,17 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'rhysd/git-messenger.vim'
 
 " Utilities
 Plug 'preservim/nerdcommenter'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
 " LSP support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-denite'
 
 " Navigation
 Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
 
 " Display
 Plug 'tomasr/molokai'
@@ -21,10 +20,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 " Project management
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python -m chadtree deps'}
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'ahmedkhalf/project.nvim'
 
 " Source code analysis
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
